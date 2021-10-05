@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Facebooku</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="facebook.png">
+  </head>
+  <body background="bg.png">
+  	<body>
+  <div id="fb-root"></div>
+    <script src="script/fb-api.js"></script>
+    <header>
+      <div class="header-inner">
+        <div class="header-title">
+          <h2><span>MY</span>FACEBOOK</h2>
+        </div>
+        <nav id="navbar" class="">
+          <ul class="">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a id="logout" href="#" onclick="logout()">Logout</a></li>
+            <li>
+              <div
+                id="login"
+                class="fb-login-button"
+                data-width=""
+                data-size="medium"
+                data-button-type="login_with"
+                data-layout="default"
+                data-auto-logout-link="false"
+                data-use-continue-as="false"
+                data-scope="public_profile, email, user_birthday, user_posts"
+                data-onlogin="checkLoginState()"
+              >
+                Log in to Facebook
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="container-inner">
+          <div id="default-index">
+            <h3 id="heading">Masuk untuk melihat profil kamu</h3>
+            <div class="fb-login-button"
+                 data-width=""
+                 data-size="large"
+                 data-button-type="login_with"
+                 data-layout="default"
+                 data-auto-logout-link="false"
+                 data-use-continue-as="false"
+                 data-scope="public_profile, email, user_birthday, user_posts"
+                 data-onlogin="checkLoginState()"
+            >
+              Log in to Facebook
+            </div>
+          </div>
+
+          <div id="login-index">
+            <div id="profile" class="profile-container">
+
+            </div>
+
+            <div class="post-title">
+              <h3>Latest Posts</h3>
+              <button class="refresh-btn" onclick="refresh()">
+                Refresh
+              </button>
+            </div>
+
+            <div id="post" class="post-container">
+<style>
+.footer {
+  position: fixed;
+  left: ;
+  bottom: ;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+</style>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+            </div>
+          </div>
+        </div>
+</body>
+</body>
+      </div>
+    </main>
+  </body>
+</html>
